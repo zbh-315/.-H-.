@@ -1,0 +1,31 @@
+ll eular(ll n){//欧拉函数，求与n互质的个数
+    ll ans = n;
+    for(int i=2; i*i <= n; ++i)
+    {
+        if(n%i == 0)
+        {
+            ans = ans/i*(i-1);
+            //while(n%i == 0)
+               // n/=i;
+        }
+    }
+    //if(n > 1) ans = ans/n*(n-1);
+    return ans;
+}
+upper_bound()函数返回一个迭代器，指向该容器中键值>key的第一个元素。
+lower_bound()函数返回一个迭代器，指向该容器中键值>=key的第一个元素。
+ll gcd(ll a,ll b){
+	if(a<b)return gcd(b,a);
+	if(b==0)return a;
+	return gcd(b,a%b);
+}
+
+cd E:\pythonProject
+E:
+
+deposit_money.py 1000000
+deposit_money_answer.py 1000000
+
+
+
+
